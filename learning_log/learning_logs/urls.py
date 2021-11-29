@@ -12,4 +12,7 @@ urlpatterns = [
     
     #special topic
     path(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
+    
+    #webpage for adding new topic
+    path(r'^new_topic/$', views.new_topic, name='new_topic'),
 ]
