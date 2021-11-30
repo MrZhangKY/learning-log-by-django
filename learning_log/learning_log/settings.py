@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     
     #my applications
     'learning_logs',
-    'users'
+    'users',
+    
+    #third part applicaton
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +133,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #my settings
 LOGIN_URL = '/users/^login/$'
+
+#setting of django-bootstrap3
+BOOTSTRAP3 = {
+    'include_jquery': True,
+    }  
